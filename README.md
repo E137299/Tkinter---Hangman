@@ -2,7 +2,80 @@
 
 ![Hangman](images/hangman.png)
 
-# Hangman 
+ """
+Computer Science Assignment: Hangman Game with Tkinter
+
+Objective:
+Design and implement a Hangman game GUI using Python and the Tkinter library. This assignment aims to solidify your understanding of:
+    * GUI development with Tkinter
+    * Widget creation and placement
+    * Event handling and user interaction
+    * Game logic implementation
+
+Description:
+You will create a Hangman game with a graphical user interface (GUI) using Tkinter. The game will include the following widgets:
+
+    * Title (Label)
+    * Hangman Image (Label)
+    * Message (Label)
+    * Dashes (Label)
+    * Letter Buttons (Button)
+    * Guess Entry (Entry)
+    * Enter Guess Button (Button)
+    * New Game Button (Button)
+
+You are expected to implement the game logic and connect it to the GUI elements.
+
+Phase 1: GUI Setup (40%)
+    * Create the main game window using Tk().
+    * Set the title and dimensions of the window.
+    * Create the following widgets and place them in the window using a layout manager (e.g., grid, pack, place):
+        * Title Label: Display the title of the game (e.g., "Hangman").
+        * Hangman Image Label: Display a placeholder image for the Hangman figure.  You can use a series of images (e.g., "hangman0.png", "hangman1.png", etc.) and update this label as the game progresses.  For this initial phase, you can use a single placeholder image.
+        * Message Label: Display messages to the user (e.g., instructions, feedback on guesses).
+        * Dashes Label: Display the hidden word as a series of dashes (e.g., "_ _ _ _").
+        * Letter Buttons: Create buttons for each letter of the alphabet.  Use a loop to create these buttons and arrange them in a grid layout.
+        * Guess Entry: Allow the user to enter a letter or a word as their guess.
+        * Enter Guess Button:  When clicked, this button will process the user's guess.
+        * New Game Button: Start a new game.
+    * Ensure that the GUI layout is organized and user-friendly.
+
+Phase 2: Game Logic Implementation (50%)
+    * Implement the following game logic:
+        * Word Selection:
+            * Create a list of words to be used in the game.
+            * Randomly select a word from the list when the "New Game" button is clicked.
+        * Dashes Display:
+            * Create a function to generate a string of dashes representing the hidden word.
+            * Update the "Dashes Label" with the current state of the hidden word.
+        * Guess Processing:
+            * When the "Enter Guess" button is clicked, retrieve the user's input from the "Guess Entry" widget.
+            * Validate the input to ensure it is either a single letter or the complete word.
+            * If the input is a single letter:
+                * Check if the letter is in the secret word.
+                * If it is, reveal the letter in the "Dashes Label" and update the display.
+                * If it is not, increment the incorrect guess count and update the Hangman image.
+            * If the input is the complete word:
+                * Check if the word matches the secret word.
+                * If it matches, the player wins.
+                * If it does not match, increment the incorrect guess count and update the Hangman image.
+        * Game Over:
+            * Determine when the game is over (either the player wins or loses).
+            * Display an appropriate message in the "Message Label" (e.g., "You win!", "You lose! The word was ...").
+            * Disable the letter buttons and the "Guess Entry" widget after the game is over.
+        * New Game:
+            * When the "New Game" button is clicked:
+                * Reset the game state (select a new word, reset dashes, incorrect guess count, etc.).
+                * Update the GUI to reflect the new game state (clear the message, display initial dashes, reset the Hangman image).
+                * Enable the letter buttons and the "Guess Entry" widget.
+    * Ensure that the game logic is implemented correctly and handles all possible scenarios.
+
+Phase 3: Error Handling and User Experience (10%)
+    * Implement error handling to handle invalid user input (e.g., entering multiple letters or invalid characters).  Display informative messages to the user.
+    * Improve the user experience by:
+        * Providing clear instructions and feedback to the user throughout the game.
+        * Disabling guessed letters.
+        * Adding visual enhancements (e.g., changing button colors, fonts, etc.).
 Hangman is a popular word game in which one player (the "chooser") chooses a secret word and another  player (the "guesser") attempts to guess the word one letter at a time. If a guessed letter appears in the word,  all instances of it are revealed. If not, the guesser loses a chance. If the guesser figures out the secret word  before he or she runs out of chances, he or she wins. If not, the player who chose the word wins. Traditionally,  chances are tracked using a stick figure drawing of a person being hanged from a gallows. The figure is drawn  one body part at a time, and the guesser loses when the entire figure has been drawn.
 
 ## Details 
@@ -26,3 +99,13 @@ The game can end in one of two ways:
 - Otherwise, if the player has run out of chances and the complete Hangman has been drawn, the player loses.
 
 In either case, when the game ends the host should stop asking for guesses. The host should  inform the player whether he or she won or lost, and the assistant should reveal the entire  secret word.
+
+# Required Elements (widgets)
+- Title (Label())
+- Hangman Image (Label())
+- Message (Label())
+- Dashes (Label())
+- Letters (Buttons())
+- Guess Entry (Entry())
+- Enter Guess (Button())
+- New Game (Button())
