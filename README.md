@@ -24,7 +24,7 @@ You will create a Hangman game with a graphical user interface (GUI) using Tkint
 
 You are expected to implement the game logic and connect it to the GUI elements.
 
-## Phase 1: GUI Setup (40%)
+## Phase 1: GUI Setup 
     * Create the main game window using Tk().
     * Set the title and dimensions of the window.
     * Create the following widgets and place them in the window using a layout manager (e.g., grid, pack, place):
@@ -38,7 +38,7 @@ You are expected to implement the game logic and connect it to the GUI elements.
         * New Game Button: Start a new game.
     * Ensure that the GUI layout is organized and user-friendly.
 
-## Phase 2: Game Logic Implementation (50%)
+## Phase 2: Game Logic Implementation 
     * Implement the following game logic:
         * Word Selection:
             * Create a list of words to be used in the game.
@@ -68,13 +68,13 @@ You are expected to implement the game logic and connect it to the GUI elements.
                 * Enable the letter buttons and the "Guess Entry" widget.
     * Ensure that the game logic is implemented correctly and handles all possible scenarios.
 
-## Phase 3: Error Handling and User Experience (10%)
+## Phase 3: Error Handling and User Experience 
     * Implement error handling to handle invalid user input (e.g., entering multiple letters or invalid characters).  Display informative messages to the user.
     * Improve the user experience by:
         * Providing clear instructions and feedback to the user throughout the game.
         * Disabling guessed letters.
         * Adding visual enhancements (e.g., changing button colors, fonts, etc.).
-Hangman is a popular word game in which one player (the "chooser") chooses a secret word and another  player (the "guesser") attempts to guess the word one letter at a time. If a guessed letter appears in the word,  all instances of it are revealed. If not, the guesser loses a chance. If the guesser figures out the secret word  before he or she runs out of chances, he or she wins. If not, the player who chose the word wins. Traditionally,  chances are tracked using a stick figure drawing of a person being hanged from a gallows. The figure is drawn  one body part at a time, and the guesser loses when the entire figure has been drawn.
+
 
 ## Details 
 ### Behavior 
@@ -98,12 +98,4 @@ The game can end in one of two ways:
 
 In either case, when the game ends the host should stop asking for guesses. The host should  inform the player whether he or she won or lost, and the assistant should reveal the entire  secret word.
 
-# Required Elements (widgets)
-- Title (Label())
-- Hangman Image (Label())
-- Message (Label())
-- Dashes (Label())
-- Letters (Buttons())
-- Guess Entry (Entry())
-- Enter Guess (Button())
-- New Game (Button())
+
