@@ -2,17 +2,15 @@
 
 ![Hangman](images/hangman.png)
 
- """
-Computer Science Assignment: Hangman Game with Tkinter
 
-Objective:
+## Objective:
 Design and implement a Hangman game GUI using Python and the Tkinter library. This assignment aims to solidify your understanding of:
     * GUI development with Tkinter
     * Widget creation and placement
     * Event handling and user interaction
     * Game logic implementation
 
-Description:
+## Description:
 You will create a Hangman game with a graphical user interface (GUI) using Tkinter. The game will include the following widgets:
 
     * Title (Label)
@@ -26,7 +24,7 @@ You will create a Hangman game with a graphical user interface (GUI) using Tkint
 
 You are expected to implement the game logic and connect it to the GUI elements.
 
-Phase 1: GUI Setup (40%)
+## Phase 1: GUI Setup (40%)
     * Create the main game window using Tk().
     * Set the title and dimensions of the window.
     * Create the following widgets and place them in the window using a layout manager (e.g., grid, pack, place):
@@ -40,7 +38,7 @@ Phase 1: GUI Setup (40%)
         * New Game Button: Start a new game.
     * Ensure that the GUI layout is organized and user-friendly.
 
-Phase 2: Game Logic Implementation (50%)
+## Phase 2: Game Logic Implementation (50%)
     * Implement the following game logic:
         * Word Selection:
             * Create a list of words to be used in the game.
@@ -70,7 +68,7 @@ Phase 2: Game Logic Implementation (50%)
                 * Enable the letter buttons and the "Guess Entry" widget.
     * Ensure that the game logic is implemented correctly and handles all possible scenarios.
 
-Phase 3: Error Handling and User Experience (10%)
+## Phase 3: Error Handling and User Experience (10%)
     * Implement error handling to handle invalid user input (e.g., entering multiple letters or invalid characters).  Display informative messages to the user.
     * Improve the user experience by:
         * Providing clear instructions and feedback to the user throughout the game.
